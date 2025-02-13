@@ -7,7 +7,9 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export function curryable(fn) {
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     return function curried() {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
@@ -16,6 +18,7 @@ export function curryable(fn) {
         if (args.length >= fn.length) {
             return fn.apply(void 0, args);
         }
+        // biome-ignore lint/suspicious/noExplicitAny: <explanation>
         return function () {
             var nextArgs = [];
             for (var _i = 0; _i < arguments.length; _i++) {
