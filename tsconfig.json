@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		"importHelpers": true,
 		"target": "es5", // コンパイル後の JavaScript のバージョン
 		"module": "ES2022", // モジュールシステム (CommonJS, ESModule など)
 		"declaration": true, // .d.ts ファイルを生成するかどうか
