@@ -1,14 +1,15 @@
 {
 	"compilerOptions": {
-		"target": "es5", // コンパイル後の JavaScript のバージョン
-		"module": "ES2022", // モジュールシステム (CommonJS, ESModule など)
-		"declaration": true, // .d.ts ファイルを生成するかどうか
-		"outDir": "./dist", // コンパイル後の JavaScript ファイルの出力先
-		"rootDir": "./src", // TypeScript ソースファイルのルートディレクトリ
-		"strict": true, // 厳格な型チェックを有効にする
-		"esModuleInterop": true, // CommonJS モジュールと ES モジュールの相互運用性を有効にする
-		"skipLibCheck": true, // ライブラリの型チェックをスキップする
-		"forceConsistentCasingInFileNames": true // ファイル名の大文字小文字を区別する
+		"target": "es5",
+		"module": "ES2022",
+		"moduleResolution": "node",
+		"declaration": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
 	},
 	"include": [
 		"src/**/*" // コンパイル対象のファイルを指定

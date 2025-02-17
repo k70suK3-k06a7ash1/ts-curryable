@@ -1,20 +1,21 @@
 {
 	"name": "ts-curryable",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "",
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsc",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "vitest --typecheck run"
 	},
 	"keywords": [],
 	"author": "k70suk3",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^22.13.0",
-		"typescript": "^5.7.3"
+		"typescript": "^5.7.3",
+		"vitest": "^3.0.5"
 	},
 	"dependencies": {
 		"tslib": "^2.8.1"
